@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+main * {
+  box-sizing: border-box;
+}
+
+
+/*body{
+	position: relative;
+	height: 100vh;
+	background-image: url(garden.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}*/
+
+
+.Intro::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(garden.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	opacity: 35%;
+	z-index: -1;
+}
+.Intro{
+  position: relative;
+  padding-bottom: 4%;
+}
+body > .Intro .Garden h1{
+	font-family: "Henny Penny", cursive;
+	font-size: 40px;
+	font-weight: 700;
+	color: rgb(1, 48, 1);
+	padding: 4% ;
+	text-align: center;
+	margin: 0 auto;
+
+}
+.Explore{
+	font-size: 30px;
+	font-family: "Unkempt", cursive;
+	font-weight: 550;
+	color: rgb(1, 48, 1);
+	padding: 4% 4% 2% 4%;
+	line-height: 150%;
+	width: 60%;
+	margin-left: 4%;
+	background: rgba(212, 211, 211, 0.621);
+}
+.Explore span{
+	display: block;
+	padding-bottom:5%;
+}
+.Explore p{
+	padding-bottom: 4%;
+}
+.Picker{
+	background-color: rgba(155, 252, 155, 0.235);
+	font-size: 30px;
+	font-family: "Unkempt", cursive;
+	font-weight: 550;
+	color: rgb(1, 48, 1);
+	padding: 2% 8%;
+}
+.herbPicker{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(57, 123, 57, 0.235);
+	padding: 2%;
+	margin: 0 -5%;
+}
+.herbPicker input {
+	width: 200px;
+	padding: 8px 12px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+}
+section.herbs{
+	margin: 2% 2%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.herbs div{
+	margin-bottom: 2%;
+}
+.herbs img{
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+	border-radius: 3px;
+}
+
+@media screen and (max-width: 1530px) {
+  .herbs div {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1530px){
+  .herbs img{
+	margin: 0 auto;
+	display: block;
+	
+  }
+}
+@media screen and (max-width: 1000px) {
+  .herbs div {
+    flex: 1 1 100%;
+	margin: 0 auto;
+	text-align: center;
+  }
+}
+@media screen and (max-width: 1530px) {
+  .herbs p {
+	text-align: center;
+  	margin: 0 auto;
+	display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .herbs p {
+	text-align: center;
+  	padding-top: 2%;
+	display: block;
+  }
+}
+.display {
+  	background-color: rgba(155, 252, 155, 0.235);
+  	font-size: 30px;
+  	font-family: "Unkempt", cursive;
+  	font-weight: 550;
+  	color: rgb(1, 48, 1);
+}
+
+.hidden{
+	display: none;
+}
+#sorrel, #mint, #chervil, #lavender{
+	text-align: center;
+	margin: 0 auto;
+	padding: 2% 0;
+}
+#sorrel span, #mint span, #chervil span, #lavender span{
+	font-size: 50px;
+	display: block;
+	padding: 2% 0;
+}
+#sorrel p, #mint p, #chervil p, #lavender p{
+	padding: 2% 0;
+	margin: 0 20%;
+}
+.display img{
+	border-radius: 3px;
+}

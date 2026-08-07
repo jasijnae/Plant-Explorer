@@ -1,0 +1,99 @@
+<!--I want to create a webpage that tells you interesting things about plants. You want to be able to type in four different plants and then have a picture of that plant pop up, and then click that plant to learn more information. --> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="YPlant Explorer">
+	<meta name="keywords" content="one, two, three">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Roboto:ital,wght@0,100..900;1,100..900&family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+
+
+	<title>Plant Facts</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="Plant_Facts_reset.css">
+</head>
+
+<body>
+    <section class="Intro">   
+        <section class="Garden">
+            <h1>Everything You Ever Wanted To Know About Your Home Garden Herbs</h1>
+            
+        </section>
+        <section class="Explore"> 
+            <span>Welcome to the Plant Explorer!</span>
+            <p>
+                Nature is filled with amazing plants that have been used for looking, medicine, and fragrance for centuries. Type the name of one of our featured plants—Sorrel, Mint, Chervil, or Goodwin Creek Lavender—to see a picture of the plant. Then, click on the image to uncover fascinating facts about its history, uses, and unique characteristics.
+            </p>
+            <p>
+                Whether you're a gardener, a cook, or simply curious about the natural world, there's always something new to learn about these incredible herbs. Start exploring and discover your next favorite plant!
+            </p>
+        </section>
+    </section>
+    <section class="Picker">   
+        <section  class="herbPicker">
+            <form>
+                <label for="learn"> What herb would you like to learn more about?</label>
+                <input id="learn" type="text" placeholder="">
+            </form>
+        </section>
+        <section class="herbs">
+            <div class="herbs Sorrel">
+                <img src="sorrel.png" alt="Mint" class="Sorrel">
+                <p>Sorrel</p>
+            </div>
+            <div class="herbs Mint">
+                <img src="mint.png" alt="Mint" class="Mint">
+                <p>Mint</p>
+            </div>
+            <div class="herbs Chervil">
+                <img src="chervil.png" alt="Chervil" class="Chervil">
+                <p>Chervil</p>
+            </div>
+            <div class="herbs Lavender">
+                <img src="lavender.png" alt="Lavender" class="Lavender">
+                <p>Lavender</p>
+            </div>
+        </section>
+    </section>
+    <section class="display">
+        <section id="sorrel" class="hidden">
+            <span>Sorrel</span>
+            <img src="sorrel2.png" alt="Sorrel" class="Sorrel">
+            <p>
+                Sorrel is a hardy perennial herb that grows best in full sun to partial shade and prefers moist, well-drained soil. Its bright green leaves have a tangy, lemon-like flavor that adds freshness to salads, soups, sauces, and fish dishes. Harvest the young leaves regularly to encourage new growth and enjoy the best flavor.
+            </p>
+        </section>
+        <section id="mint" class="hidden">
+            <span>Mint</span>
+            <img src="mint2.png" alt="Mint" class="Mint">    
+            <p>Mint is an easy-to-grow herb that thrives in partial to full sun and consistently moist soil. Because it spreads quickly, many gardeners grow it in containers to keep it from taking over the garden. Its cool, refreshing flavor is popular in teas, desserts, fruit salads, sauces, and drinks like mojitos.                    
+            </p>
+        </section>
+        <section id="chervil" class="hidden">
+            <span>Chervil</span>
+            <img src="chervil2.png" alt="Chervil" class="Chervil">   
+            <p>Chervil prefers cool temperatures, partial shade, and rich, moist soil. This delicate herb has a mild flavor reminiscent of parsley and anise, making it a favorite in French cuisine. Chervil is commonly used to season eggs, chicken, seafood, soups, and creamy sauces, and it is best added at the end of cooking to preserve its flavor.                    
+            </p>
+        </section>
+        <section id="lavender" class="hidden">
+            <span>Lavender</span>
+            <img src="lavender3.png" alt="Lavender" class="Lavender">  
+            <p>Goodwin Creek Lavender grows best in full sun and well-drained soil and is highly drought tolerant once established. This fragrant variety is prized for both its beautiful silvery foliage and aromatic purple flowers. In the kitchen, its flowers can be used sparingly to flavor baked goods, teas, syrups, and herb blends such as Herbes de Provence.                    
+            </p>
+        </section>
+    </section>
+
+    
+
+
+	<script type="text/javascript" src="Plant_Facts.js"></script>
+</body>
+
+</html>
